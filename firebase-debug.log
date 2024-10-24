@@ -1,0 +1,89 @@
+[debug] [2024-10-21T14:52:49.117Z] ----------------------------------------------------------------------
+[debug] [2024-10-21T14:52:49.117Z] Command:       /Users/amaljithta/.nvm/versions/node/v18.17.0/bin/node /Users/amaljithta/.nvm/versions/node/v18.17.0/bin/firebase deploy
+[debug] [2024-10-21T14:52:49.118Z] CLI Version:   13.22.0
+[debug] [2024-10-21T14:52:49.118Z] Platform:      darwin
+[debug] [2024-10-21T14:52:49.118Z] Node Version:  v18.17.0
+[debug] [2024-10-21T14:52:49.121Z] Time:          Mon Oct 21 2024 20:22:49 GMT+0530 (India Standard Time)
+[debug] [2024-10-21T14:52:49.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-21T14:52:49.122Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-21T14:52:49.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-21T14:52:49.165Z] > authorizing via signed-in user (amaljith6430@gmail.com)
+[debug] [2024-10-21T14:52:49.165Z] [iam] checking project ascensionwave-6456e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-21T14:52:49.165Z] Checked if tokens are valid: false, expires at: 1729435045206
+[debug] [2024-10-21T14:52:49.165Z] Checked if tokens are valid: false, expires at: 1729435045206
+[debug] [2024-10-21T14:52:49.165Z] > refreshing access token with scopes: []
+[debug] [2024-10-21T14:52:49.165Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-21T14:52:49.166Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-21T14:52:49.507Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-21T14:52:49.508Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-21T14:52:49.518Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensionwave-6456e:testIamPermissions [none]
+[debug] [2024-10-21T14:52:49.518Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensionwave-6456e:testIamPermissions x-goog-quota-user=projects/ascensionwave-6456e
+[debug] [2024-10-21T14:52:49.518Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensionwave-6456e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-21T14:52:49.806Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-21T14:52:49.807Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-10-21T14:52:51.047Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensionwave-6456e:testIamPermissions 200
+[debug] [2024-10-21T14:52:51.047Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensionwave-6456e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-21T14:52:51.048Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:51.048Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:51.049Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e [none]
+[debug] [2024-10-21T14:52:51.865Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e 200
+[debug] [2024-10-21T14:52:51.866Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e {"projectId":"ascensionwave-6456e","projectNumber":"960368419248","displayName":"Ascensionwave","name":"projects/ascensionwave-6456e","resources":{"hostingSite":"ascensionwave-6456e"},"state":"ACTIVE","etag":"1_9a6f2d19-272b-4150-afad-d215a2068f50"}
+[debug] [2024-10-21T14:52:52.622Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:52.622Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:52.622Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites pageToken=&pageSize=10
+[debug] [2024-10-21T14:52:53.913Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites 200
+[debug] [2024-10-21T14:52:53.913Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites {"sites":[{"name":"projects/ascensionwave-6456e/sites/ascensionwave-6456e","defaultUrl":"https://ascensionwave-6456e.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-10-21T14:52:53.915Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:53.915Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:53.915Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites 
+[debug] [2024-10-21T14:52:54.936Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites 200
+[debug] [2024-10-21T14:52:54.937Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites {"sites":[{"name":"projects/ascensionwave-6456e/sites/ascensionwave-6456e","defaultUrl":"https://ascensionwave-6456e.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-10-21T14:52:54.937Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:54.937Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:54.937Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e/webApps/-/config [none]
+[debug] [2024-10-21T14:52:56.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e/webApps/-/config 200
+[debug] [2024-10-21T14:52:56.032Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ascensionwave-6456e/webApps/-/config {"projectId":"ascensionwave-6456e","appId":"1:960368419248:web:1088a92172af80a829b675","storageBucket":"ascensionwave-6456e.appspot.com","apiKey":"AIzaSyC7Xv6DwNvOmFNAfSmV7qWt9C1lS3vrIfY","authDomain":"ascensionwave-6456e.firebaseapp.com","messagingSenderId":"960368419248","measurementId":"G-45WT1PJPNP"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-10-21T14:52:57.435Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:57.435Z] Checked if tokens are valid: true, expires at: 1729525968508
+[debug] [2024-10-21T14:52:57.435Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites/ascensionwave-6456e [none]
+[debug] [2024-10-21T14:52:58.417Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites/ascensionwave-6456e 200
+[debug] [2024-10-21T14:52:58.418Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ascensionwave-6456e/sites/ascensionwave-6456e {"name":"projects/ascensionwave-6456e/sites/ascensionwave-6456e","defaultUrl":"https://ascensionwave-6456e.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.15
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./tailwind.config.ts:2:48
+Type error: Could not find a declaration file for module 'tailwindcss/lib/util/flattenColorPalette'. '/Users/amaljithta/Documents/Ascension_Wave/ascensionwave/node_modules/tailwindcss/lib/util/flattenColorPalette.js' implicitly has an 'any' type.
+  If the 'tailwindcss' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module 'tailwindcss/lib/util/flattenColorPalette';`
+
+  1 | import type { Config } from "tailwindcss";
+> 2 | import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
+    |                                                ^
+  3 | import svgToDataUri from 'mini-svg-data-uri';
+  4 |
+  5 | const config: Config = {
+
+[debug] [2024-10-21T14:53:04.791Z] Error: ENOENT: no such file or directory, open '/Users/amaljithta/Documents/Ascension_Wave/ascensionwave/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
